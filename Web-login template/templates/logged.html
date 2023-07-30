@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OtterHub - Welcome!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            text-align: right;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile h1 {
+            margin: 0;
+            color: #007bff;
+        }
+        .profile p {
+            margin: 10px 0;
+            color: #555555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p>Welcome, <strong id="user-email">{{mail}}</strong>!</p>
+    </div>
+    <div class="container">
+        <div class="profile">
+            <img src="{{ url_for('static', filename='image.png') }}">
+            <div>
+                <h1>{{mail}}</h1>
+                <p>Location: OtterVille</p>
+                <p>Bio: Welcome to OtterHub!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
