@@ -1,4 +1,5 @@
-# app.py
+# app.py 
+#coment random
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
