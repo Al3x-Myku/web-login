@@ -32,3 +32,4 @@ def log():
     return render_template('log in.html')
 if __name__ == '__main__':
     app.run(debug=True, port=80,host="0.0.0.0")
+#App made by Al3x-Myku
