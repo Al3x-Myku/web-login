@@ -13,3 +13,4 @@ COPY templates /webapp/templates
 COPY static /webapp/static
 EXPOSE 80
 CMD [ "python","app.py" ]
+#Dockerfile by Al3x-Myku
